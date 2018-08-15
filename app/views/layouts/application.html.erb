@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AirPikachu</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/message' %>
+<!--
+    <%= link_to "Destroy", admin_destroy_user_path(3), method: :delete, data: { confirm: "You sure?" } %> -->
+
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+
+  </body>
+</html>
